@@ -1,0 +1,25 @@
+﻿<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>MSDN Magazine RSS Feed:</title>
+    <link>http://www.msdnmagazine.com</link>
+    <description>Thank You for subscribing to our RSS Feed.</description>
+    <language>en-us</language>
+    <copyright>© 2015 Microsoft Corporation. All rights reserved.</copyright>
+    <pubDate>Sun, 04 Jan 2015 11:43:26 GMT</pubDate>
+    <lastBuildDate>01/02/2015 00:00:00 GMT</lastBuildDate>
+    <ttl>1440</ttl>
+    <image>
+      <title>MSDN Magazine RSS Feed:</title>
+      <url>"http://www.microsoft.com/technet/technetmag/images/tnlogo.gif"</url>
+      <link>http://www.msdnmagazine.com</link>
+    </image>
+    <item>
+      <title>Visual Basic .NET: 14 Top Improvements in Visual Basic 14</title>
+      <link>http://msdn.microsoft.com/magazine/a687d635-a012-4c59-9ed5-54b9bfa98317</link>
+      <guid>http://msdn.microsoft.com/magazine/a687d635-a012-4c59-9ed5-54b9bfa98317</guid>
+      <description>January 2015&lt;br/&gt;&lt;br/&gt;Microsoft has rebuilt Visual Basic 14 from the ground up. VB team member Lucian Wischik presents the Microsoft VB Language Design Team’s top 14 improvements in the new Visual Basic 14.</description>
+      <dc:creator>Lucian Wischik</dc:creator>
+      <pubDate>Sun, 04 Jan 2015 11:43:26 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

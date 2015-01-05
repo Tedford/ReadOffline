@@ -1,0 +1,814 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style=""overflow:auto="""">
+  <head id="ctl00_Head">
+    <link id="ctl00_HeaderLink2" rel="stylesheet" type="text/css" href="http://i3.msdn.microsoft.com/Platform/MasterPages/Msdn10/Msdn10a-bn1651.css" />
+    <link id="ctl00_HeaderLink3" rel="stylesheet" type="text/css" href="http://i3.msdn.microsoft.com/Platform/MasterPages/MsdnMagazine2/Magazine2-bn1651.css" />
+    <link rel="alternate" type="application/rss+xml" title="MSDN Magazine - Current Issue" href="/magazine/rss/default.aspx?z=z&amp;iss=1" />
+    <link rel="alternate" type="application/rss+xml" title="MSDN Magazine - Complete" href="/magazine/rss/default.aspx?z=z&amp;all=1" />
+    <link rel="alternate" type="application/rss+xml" title="MSDN Magazine Blog" href="http://blogs.msdn.com/msdnmagazine/rss.xml" />
+    <meta name="NormalizedUrl" content="http://msdn.microsoft.com/en-us/magazine(d=default)/dn890368(l=en-us,v=MSDN.10).aspx" />
+    <meta name="VotingContextUrl" content="http://msdn.microsoft.com/en-us/magazine(d=default)/dn890368(l=en-us,v=MSDN.10).aspx" />
+    <meta name="ROBOTS" content="NOINDEX,NOFOLLOW" />
+    <meta name="MN" content="FB361393-6:30:35 PM" />
+    <meta name="ms.locale" content="en-us" />
+    <meta name="Search.ShortId" content="dn890368" />
+    <!-- Looking for metadata? Use the robot view instead http://currentsite/currenturl(robot).aspx -->
+    <link rel="stylesheet" type="text/css" href="http://i3.msdn.microsoft.com/en-us/magazine/mtps-bn1651.css?l=en-us&amp;i=magazine&amp;ct=AlternateSelector;CCEditor;CCSection;CCTagEditor;ContentFallback;EyebrowSimple;FeedViewerBasic;InstrumentedLink;InteractiveToolbar;MtpsRating;MtViewDropDown;Omniture;RedVelvetInstrumentedLink;StoCodeHighlighter;StoFooter;StoLocaleManagementFlyout;StoMastheadMSDN;StoMtpsLoginStatus;StoProfileLink;StoSearch;StoTabStrip;SurveyLauncher;TemplatedFlyout;TransWikiPopupEditor;WebMetrix;WebTrends&amp;clustimg=1"></link>
+    <link rel="alternate" media="print" href="/en-us/magazine/dn890368(printer).aspx" />
+    <title>
+      Visual Basic .NET - 14 Top Improvements in Visual Basic 14
+    </title>
+  </head>
+  <body id="ctl00_MTPS_Body" class="MsdnPageBody" dir="ltr">
+    <form name="aspnetForm" method="post" action="dn890368.aspx" id="aspnetForm">
+      <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFImN0bDAwJE1hc3RoZWFkJFNlYXJjaCRTZWFyY2hCdXR0b24lmakQCE49nay/Oh+qSjeDZiRv+Q==" />
+
+
+      <script type="text/javascript">
+        //<![CDATA[
+var CurUserId="";var ClientURL="http%3a%2f%2fmsdn.microsoft.com%2fen-us%2fmagazine(d%3ddefault)%2fdn890368(l%3den-us%2cv%3dMSDN.10).aspx";var maxRating=5;var RatingObjId="ctl00_tb1_Flyout_Rating1";var tbCommentsId="ctl00_tb1_Flyout_tbComments";var PageId="dn890368";var pageTag="contentRatingdn890368MSDN.10en-us";var sendBtnId="ctl00_tb1_Flyout_btnSend";var curRating="0";var contentRated=false;var RatingTooltipText="Click a star and provide feedback";var RatedTooltipText="You have already rated this content. Thank you for your feedback.";var userIPAddress="107.15.166.55";var MtpsPageDirection="ltr";var RatingFlyoutID="ctl00_tb1_Flyout";var Rating_Device="default";//]]>
+      </script>
+
+      <script src="http://i2.msdn.microsoft.com/Platform/cjs/jquery-1.2.6-bn1651.js" type="text/javascript"></script>
+      <script src="http://i2.msdn.microsoft.com/Platform/cjs/Silverlight-bn1651.js" type="text/javascript"></script>
+      <script src="http://i2.msdn.microsoft.com/Platform/Controls/StoCodeHighlighter/resources/jquery.chili-2.2-bn1651.js" type="text/javascript"></script>
+      <script src="http://i2.msdn.microsoft.com/Platform/Controls/StoCodeHighlighter/resources/recipes-bn1651.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        //<![CDATA[
+var wt_nvr_ru = "WT_NVR_RU";var wt_fpcdom = ".microsoft.com";var wt_domlist = "msdn.microsoft.com";var wt_pathlist = "";var wt_paramlist = "DCSext.mtps_devcenter";var wt_siteid = "MSDN";var gDomain="m.webtrends.com";
+var gDcsId="dcsmgru7m99k7mqmgrhudo0k8_8c6m";
+var gFpc="WT_FPC";
+/*<![CDATA[*/
+if(document.cookie.indexOf(gFpc+"=")==-1){document.write("<scr"+"ipt type='text/javascript' src='"+"http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+"/"+gDcsId+"/wtid.js"+"'><\/scr"+"ipt>");}
+/*]]>*/
+        var detectedLocale = 'en-us';
+        var wtsp="_msdnmag_";
+        var gTrackEvents = 1;
+        var omni_guid='a423166b-d768-4716-b62a-9f80384fb061';//]]>
+
+      </script>
+      <script src='http://i2.msdn.microsoft.com/platform/Controls/Omniture/resources/MSDN/omni_rsid_msdn-bn1651.js' type='text/javascript'></script>
+      <noscript>
+        <a href='http://www.omniture.com' title='Web Analytics'>
+          <img src='http://msstonojsmsdn.112.2o7.net/b/ss/msstonojsmsdn/1/H.20.2--NS/0'  height='1' width='1' border='0' alt='' />
+        </a>
+      </noscript>
+      <script type="text/javascript">
+        //<![CDATA[
+$(document).ready(function() { var sf = "a[@rel$='sitefeedback']"; if ($(sf) == null) return;  $(sf).click(function() {   var t = $(this).attr('targetUrl');   window.open(t,'SiteFeedback','width=670,resizable=no,height=700,toolbar=no,location=no,scrollbars=yes,directories=no,status=no,menubar=no'); return false; }); });//]]>
+      </script>
+
+      <script src="http://i2.msdn.microsoft.com/platform/cjs/extract/compositejscript3.js" type="text/javascript"></script>
+      <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="42B7A491" />
+
+      <div id="ctl00_checkFlyer">
+
+      </div>
+
+
+      <div id="BodyBackground">
+        <div id="ctl00_JelloSizer" class="JelloSizer">
+          <div id="JelloExpander">
+            <div id="ctl00_JelloWrapper" class="JelloWrapper">
+              <div class="Clear"> </div>
+
+              <div class="Clear"> </div>
+
+
+              <div class="Masthead">
+                <div id="ctl00_Masthead_brandLogo" class="BrandLogo">
+                  <a href="/en-us/magazine/default.aspx" id="ctl00_Masthead_brandlink" title="MSDN Magazine">MSDN Magazine</a>
+                </div>
+                <div class="Search">
+                  <div id="ctl00_Masthead_Search_SearchBox" class="SearchBox">
+                    <input name="ctl00$Masthead$Search$SearchTextBox" type="text" id="ctl00_Masthead_Search_SearchTextBox" title="Search MSDN" class="TextBoxSearch" />
+                    <input type="image" name="ctl00$Masthead$Search$SearchButton" id="ctl00_Masthead_Search_SearchButton" title="Click here to search" class="SearchButton" alt="Click here to search" src="http://i.msdn.microsoft.com/Global/Images/clear.gif" border="0" />
+                    <span class="Bing"></span>
+                    <script type="text/javascript" defer="defer" src="http://i4.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=ctl00_Masthead_Search_SearchTextBox&btnid=ctl00_Masthead_Search_SearchButton&brand=MSDN&loc=en-us&focusOnInit=true&Refinement=118&watermark=MSDN Magazine" id="mscom.srch.searchBox"></script>
+                  </div>
+                </div>
+                <div class="GlobalBar">
+                  <div id="ctl00_Masthead_passportScarab" class="PassportScarab">
+                    <a id="idPPScarab" href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=12&amp;ct=1420425035&amp;rver=6.0.5276.0&amp;wp=MCLBI&amp;wlcxt=msdn%24msdn%24msdn&amp;wreply=http%3a%2f%2fmsdn.microsoft.com%2fen-us%2fmagazine%2fdn890368.aspx&amp;lc=1033&amp;id=254354&amp;mkt=en-US" >
+                      <span id="idPPScarabSIT" class="MTPS_GlobalToolbarLinks_msdn">Sign in</span>
+                    </a>
+                    <div id="idPPMWOverlay" style="display: none;"></div>
+                  </div>
+                  <div class="LocaleFlyout">
+
+                    <div id="MainDiv"  onmouseover="FlyoutPopupShow()"  onmouseout="FlyoutPopupHide()">
+                      <div id="FlyoutTop" >
+                        <a id="ctl00_Masthead_LocaleManagement_linkCountryLanguage" class="LocaleManagementFlyoutStaticLink">United States - English&nbsp;</a>
+                        <img id="img_Arrow" class="LocaleManagementFlyoutPopArrow" src="http://i.msdn.microsoft.com/Global/Images/clear.gif" alt="choose your country or language"/>
+                      </div>
+                      <div id="FlyoutPopup"  class="LocaleManagementFlyoutPopup">
+                        <table class="LocaleManagementFlyoutPopupTable"  >
+                          <tr>
+                            <td >
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Arg" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Arg&#39;,&#39;&#39;)">
+                                Argentina (EspaÃ±ol)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td >
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Bra" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Bra&#39;,&#39;&#39;)">
+                                Brasil (PortuguÃªs)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td >
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_CanE" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_CanE&#39;,&#39;&#39;)">
+                                Canada (English)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td >
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_CanF" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_CanF&#39;,&#39;&#39;)">
+                                Canada (FranÃ§ais)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Chi" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Chi&#39;,&#39;&#39;)">
+                                ä¸­å›½ (ç®€ä½“ä¸­æ–‡)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Col" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Col&#39;,&#39;&#39;)">
+                                Colombia (EspaÃ±ol)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Deu" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Deu&#39;,&#39;&#39;)">
+                                Deutschland (Deutsch)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Esp" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Esp&#39;,&#39;&#39;)">
+                                EspaÃ±a (EspaÃ±ol)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Fra" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Fra&#39;,&#39;&#39;)">
+                                France (FranÃ§ais)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Ind" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Ind&#39;,&#39;&#39;)">
+                                India (English)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Ita" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Ita&#39;,&#39;&#39;)">
+                                Italia (Italiano)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Jpa" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Jpa&#39;,&#39;&#39;)">
+                                æ—¥æœ¬ (æ—¥æœ¬èªž)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Kor" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Kor&#39;,&#39;&#39;)">
+                                í•œêµ­ (í•œêµ­ì–´)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Mex" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Mex&#39;,&#39;&#39;)">
+                                MÃ©xico (EspaÃ±ol)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Per" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Per&#39;,&#39;&#39;)">
+                                PerÃº (EspaÃ±ol)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Ð Ð¾Ñ" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Ð Ð¾Ñ&#39;,&#39;&#39;)">
+                                Ð Ð¾ÑÑÐ¸Ñ (PÑƒÑÑÐºÐ¸Ð¹)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_Tai" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_Tai&#39;,&#39;&#39;)">
+                                å°ç£ (ç¹é«”ä¸­æ–‡)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_UK" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_UK&#39;,&#39;&#39;)">
+                                United Kingdom (English)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_US" href="javascript:__doPostBack(&#39;ctl00$Masthead$LocaleManagement$lkbtn_US&#39;,&#39;&#39;)">
+                                United States (English)
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="LocaleManagementFlyoutPopupHr"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a id="ctl00_Masthead_LocaleManagement_lkbtn_More" href="/en-us/selectLocale">More...</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="Clear"></div>
+                  <div id="ctl00_Masthead_ProfileLink_UserName" class="UserName"></div>
+                </div>
+                <div class="Clear"></div>
+                <div id="ctl00_Masthead_networkTagLineArea" class="NetworkLogo">
+                  <a href="/en-us/default.aspx" id="ctl00_Masthead_networkLink">
+                    <img title="microsoft developer network" src="http://i.msdn.microsoft.com/platform/Controls/StoMastheadMSDN/resources/brand_logo.png" border="0" />
+                  </a>
+                </div>
+
+
+                <div class="leftcap"></div>
+                <div class="internav">
+                  <div id="ctl00_Masthead_tabs_manTabsHolder">
+                    <a id="ctl00_Masthead_tabs_ctl01" class="normal" href="http://msdn.microsoft.com/en-us/magazine/default.aspx" onclick="javascript:Track('|TabStrip Link|ctl00_Masthead_tabs_ctl00|ctl00_Masthead_tabs_ctl01',this);">Home</a>
+                    <a id="ctl00_Masthead_tabs_ctl03" class="normal" href="http://msdn.microsoft.com/en-us/magazine/ee532082.aspx" onclick="javascript:Track('|TabStrip Link|ctl00_Masthead_tabs_ctl02|ctl00_Masthead_tabs_ctl03',this);">Topics</a>
+                    <a id="ctl00_Masthead_tabs_ctl05" class="active" href="http://msdn.microsoft.com/en-us/magazine/ee310108.aspx" onclick="javascript:Track('|TabStrip Link|ctl00_Masthead_tabs_ctl04|ctl00_Masthead_tabs_ctl05',this);">Issues and Downloads</a>
+                    <a id="ctl00_Masthead_tabs_ctl07" class="normal" href="http://msdn.microsoft.com/en-us/magazine/ee358702.aspx" onclick="javascript:Track('|TabStrip Link|ctl00_Masthead_tabs_ctl06|ctl00_Masthead_tabs_ctl07',this);">Subscribe</a>
+                    <a id="ctl00_Masthead_tabs_ctl09" class="normal" href="http://msdn.microsoft.com/en-us/magazine/ee291618.aspx" onclick="javascript:Track('|TabStrip Link|ctl00_Masthead_tabs_ctl08|ctl00_Masthead_tabs_ctl09',this);">Submit an Article</a>
+                    <a id="ctl00_Masthead_tabs_ctl11" class="normal" href="http://msdn.microsoft.com/en-us/magazine/cc194384.aspx" onclick="javascript:Track('|TabStrip Link|ctl00_Masthead_tabs_ctl10|ctl00_Masthead_tabs_ctl11',this);">RSS</a>
+                  </div>
+                </div>
+                <div class="rightcap"></div>
+                <div class="Clear"></div>
+
+              </div>
+              <div class="Clear"> </div>
+              <div class="topleftcorner"> </div>
+              <div class="toprightcorner"> </div>
+              <div class="alley">
+                <div class="wrapper">
+                  <div class="inner">
+
+                    <div class="Clear"> </div>
+                    <div id="ctl00_EyebrowMenu_EyebrowContainer" class="EyebrowContainer">
+                      <a id="ctl00_EyebrowMenu_ctl00" title="MSDN Magazine" class="EyebrowLink" href="http://msdn.microsoft.com/en-us/magazine/dd767791.aspx" onclick="javascript:Track('|Eyebrow|ctl00_EyebrowMenu_EyebrowContainer|ctl00_EyebrowMenu_ctl00',this);">MSDN Magazine</a>
+                      <span>&nbsp;&gt;&nbsp;</span>
+                      <a id="ctl00_EyebrowMenu_ctl01" title="Issues and Downloads" class="EyebrowLink" href="http://msdn.microsoft.com/en-us/magazine/ee310108.aspx" onclick="javascript:Track('|Eyebrow|ctl00_EyebrowMenu_EyebrowContainer|ctl00_EyebrowMenu_ctl01',this);">Issues and Downloads</a>
+                      <span>&nbsp;&gt;&nbsp;</span>
+                      <a id="ctl00_EyebrowMenu_ctl02" title="2015" class="EyebrowLink" href="http://msdn.microsoft.com/en-us/magazine/dn890361.aspx" onclick="javascript:Track('|Eyebrow|ctl00_EyebrowMenu_EyebrowContainer|ctl00_EyebrowMenu_ctl02',this);">2015</a>
+                      <span>&nbsp;&gt;&nbsp;</span>
+                      <a id="ctl00_EyebrowMenu_ctl03" title="January 2015 Issue" class="EyebrowLink" href="http://msdn.microsoft.com/en-us/magazine/dn890362.aspx" onclick="javascript:Track('|Eyebrow|ctl00_EyebrowMenu_EyebrowContainer|ctl00_EyebrowMenu_ctl03',this);">January 2015 Issue</a>
+                      <span>&nbsp;&gt;&nbsp;</span>
+                      <span class="EyebrowElement">&nbsp;Visual Basic .NET - 14 Top Improvements in Visu...</span>
+                    </div>
+                    <div class="Clear"> </div>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; table-layout: fixed;">
+                      <tr>
+                        <td style="vertical-align: top; width: auto;" valign="top">
+
+                          <div id="MainContent" style="width: 100%">
+                            <span id="ctl00_altSelector"></span>
+
+                            <div class="navpage" >
+                              <div class="MagazineStyle">
+                                <div class="FeatureTitle">
+                                  <h2>
+                                    <strong>Visual Basic .NET</strong>
+                                  </h2>
+                                  <h1>
+                                    <strong>14 Top Improvements in Visual Basic 14</strong>
+                                  </h1>
+                                  <p>
+                                    <strong>
+                                      <a id="ctl00_MTContentSelector1_mainContentContainer_ctl01" href="ee532098.aspx?sdmr=LucianWischik&sdmi=authors" onclick="javascript:Track('ctl00_MTContentSelector1_mainContentContainer_ctl00|ctl00_MTContentSelector1_mainContentContainer_ctl01',this);">Lucian Wischik</a>
+                                    </strong>
+                                  </p>
+                                </div>
+                                <p> Visual Basic 14 is the newest version of Visual Basic, and it will ship as part of Visual Studio 2015. This version has been rewritten from scratch in about 1.3 million lines of VB codeâ€”earlier versions were actually written in C++. The team took advantage of the rewrite to rethink every part of VB from the ground up. I asked the team to pick out their top 14 improvements. They chose their favorites from across the boardâ€”in the coding experience, in the project system fundamentals and in the language itself.</p>
+                                <h2>Better Coding Experience</h2>
+                                <p>
+                                  <strong>1. Refactorings</strong> â€œJust the fact that we finally get refactoring built directly into the product is huge.â€â€”.NET MVP Jim Wooley
+                                </p>
+                                <p>
+                                  It used to be you had to buy add-on products just to get essential refactorings for Visual Basic, like extracting a method or inlining a temporary variable. There were a few refactorings for C#, and Microsoft had partnered with Developer Express to make its Refactor! add-in available to Visual Basic users since Visual Studio 2005. Now refactorings are built into Visual Studio 2015! To use them, click on an identifier, or highlight a sub-expression. Then hit Ctrl+Dot, or right-click and choose Quick Actions. This brings up a light bulb context menu of relevant actions, as shown in <strong>Figure 1</strong>.
+                                </p>
+                                <p>
+                                  <img alt="Visual Basic 14 Now Has Built-in Refactoring" src="http://i.msdn.microsoft.com/dn890368.Wischik_figure1_hires(en-us,MSDN.10).png" title="Visual Basic 14 Now Has Built-in Refactoring" />
+                                  <br />
+                                  <strong>Figure 1 Visual Basic 14 Now Has Built-in Refactoring</strong>
+                                </p>
+                                <p>Note that the refactorings are context-aware. For instance, if you extract the right-hand side of â€œDim circleArea = Math.PI * radius * radiusâ€ out into a method, Visual Basic suggests the name â€œGetCircleAreaâ€ for that method. And it puts you into inline-rename mode if you want to change the name further. Whatâ€™s smart about this inline-rename is that it can detect and warn you about name clashes if you pick a name thatâ€™s already in use, it can avoid clashes where possible, and it works across your entire solution, even changing names in C# projects, as well.</p>
+                                <p>
+                                  <strong>2. Analyzers</strong> â€œThe feature is spectacular. I have so many ideas for how to use this feature ... all the little things I see in peopleâ€™s code.â€â€”Overheard from a Windows PowerShell MVP
+                                </p>
+                                <p>Analyzers are a way to put those light bulbs, code actions and error squiggles into your own hands. You can use them to enforce coding guidelines throughout your team. If youâ€™re flown in to debug a problem, you can plug in an analyzer to quickly find common code defects in the entire solution. And many of the libraries you use can become â€œcode-awareâ€ with their own built-in analyzers. For instance, suppose you havenâ€™t yet used the Microsoft Azure Storage library or havenâ€™t read articles on best practices. Because the library now comes with an analyzer that detects common pitfalls in use of its APIs, you can be immediately confident that youâ€™re using it properly. Itâ€™s like having an expert code reviewer stand over your shoulder as you type.</p>
+                                <p>
+                                  You can add analyzers to your project under the new References | Analyzers node, (or via NuGet). Once there they become part of your projectâ€™s compilationâ€”they run live as you type to show live error squiggles. They run when you build your project in Visual Studio or on the command line, and will even run on build servers. Analyzers get a chance to â€œcrack openâ€ the internals of the compiler, to look at the syntax trees of the projectâ€™s source code and its types and members. Developers are pleasantly surprised to discover how easy it is to code their expert domain knowledge into analyzers, thanks to these syntax trees and types+members. My favorite analyzer is one that detects where my team has been using Async Sub methods that should have been Async Function â€¦ As Task and issues a warning. This is a rough corner of asynchronous programming that not enough people are aware of, and it leads to difficult-to-catch concurrency bugs, so itâ€™s great that my team can now catch the error at compile time. To get started writing your own analyzers, go to <a id="ctl00_MTContentSelector1_mainContentContainer_ctl02" href="http://roslyn.codeplex.com/" onclick="javascript:Track('ctl00_MTContentSelector1_mainContentContainer_ctl00|ctl00_MTContentSelector1_mainContentContainer_ctl02',this);">roslyn.codeplex.com</a>.
+                                </p>
+                                <p>
+                                  <strong>3. No Need to Cursor off the Line</strong> â€œWe do the right thing now.â€â€”Dustin Campbell, Visual Basic Team Member
+                                </p>
+                                <p>As a VB user, youâ€™ve long been used to typing some code, then doing a quick â€œdown-then-up cursorâ€ to see if any error squiggles appear. Or youâ€™d write code to fix an error squiggle, but then have to do the â€œdown-then-upâ€ for the squiggle to disappear.</p>
+                                <p>Now you donâ€™t have to go through all of that. Just leave the cursor where it is, and error squiggles will appear or disappear themselves.</p>
+                                <p>
+                                  <strong>4. References in XML Doc Comments</strong> â€œFor people passionate about docs, this is an enormous step in the right direction.â€â€”.NET MVP Sam Harwell
+                                </p>
+                                <p>Are you passionate about XML doc comments? Hereâ€™s a small example:</p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">
+                                      ''' &lt;summary&gt;
+                                      ''' Similar to &lt;see cref="List(Of Integer).Count"/&gt;
+                                      ''' &lt;/summary&gt;
+                                      ''' &lt;param name="e"&gt;Thing to count&lt;/param&gt;
+                                      ''' &lt;remarks&gt;&lt;/remarks&gt;
+                                      Sub Count(e As IEnumerable)
+                                      End Sub
+                                    </code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>In previous versions of VB, when you typed out cref and param-name in your comments, you got completion-list help, but beyond that you were on your own. The compiler did some minimal validation to check that the names existed, but they were typeset in grey and not easy to find, look up or refactor.</p>
+                                <p>Now in Visual Basic 14 the cref and param-name arguments are colorized properly. You can hover over them to see tooltips. When you do a rename-symbol refactoring (Ctrl+R, Ctrl+R), Visual Basic renames all references to a symbol, including those in cref and param-name. You can right-click on one of them and Go to Definition, or Find All References. If you want to refer to a method that has several overloads, you can now unambiguously refer to the single overload you want. These changes all make it easier to type references in your XML doc-commentsâ€”and get them right.</p>
+                                <h2>Project System Fundamentals</h2>
+                                <p>
+                                  <strong>5. References Node in Solution Explorer</strong> â€œFact is, we all have to tweak references daily.â€â€”Lucian Wischik, Visual Basic Team Member
+                                </p>
+                                <p>
+                                  <strong>Figure 2</strong> shows how a typical Visual Basic 14 project looks in Solution Explorer.
+                                </p>
+                                <p>
+                                  <img alt="The References Node Is Now Shown in Solution Explorer" src="http://i.msdn.microsoft.com/dn890368.Wischik_figure3_hires(en-us,MSDN.10).png" title="The References Node Is Now Shown in Solution Explorer" />
+                                  <br />
+                                  <strong>Figure 2 The References Node Is Now Shown in Solution Explorer</strong>
+                                </p>
+                                <p>Whatâ€™s new is the References node. This used to be hidden and you had to click Show All Files to see itâ€”but that also showed lots of irrelevant files.</p>
+                                <p>This previous behavior might have made sense 10 years ago when youâ€™d start with a Windows Forms project and it would generally have the right set of references. But itâ€™s a reality of modern development nowadays that the References node is used frequentlyâ€”especially to manage NuGet references. Itâ€™s a small but handy convenience to be able to find it easily in Solution Explorer.</p>
+                                <p>
+                                  <strong>6. Shared Projects</strong> â€œThis is really just nice tooling on top of linked files that makes them easier to work with.â€â€”Windows Developer MVP Morten Nielsen
+                                </p>
+                                <p>Suppose you want to share code between two or more projects. Itâ€™s a common-enough situation, for example when maintaining both Windows Presentation Foundation (WPF) and Windows Phone versions of an app. The goal is always the same: maximize code reuse, so, for example, a bug fix you make for one project will automatically benefit the other project.</p>
+                                <p>In the past, you could choose between two techniques: use linked files to share common source code, or rearchitect your shared code into a Portable Class Library to share a common binary. Now Visual Basic 14 allows a third, powerful technique: Shared Projects.</p>
+                                <p>Why would you use Shared Projects? The task of sharing code is deep and challenging with no good â€œone-size-fitsâ€“allâ€ solution. Portable Class Libraries are a good, clean solution, but they force you to architect your code so the common code never calls into the WPF or Phone projects; it only calls into system APIs that are present on both WPF and Phone. Shared Projects are easier to use because they donâ€™t require this rearchitecting.</p>
+                                <p>To set up a shared project, right-click on your solution and select Add | New Project | VB | Shared Project. Next, right-click on each projectâ€™s Reference node in turn and choose Add | Shared Projects. A Shared Project is just a collection of the source files, XAML files, images and other assets that will be included in each project that references it.</p>
+                                <p>For each of your projects you can also set upÂ  My Project | Compile | Advanced Compile Options | Custom Constants with custom constantsâ€”WPF and PHONE, for example. Then, in your shared code, you can call into project-specific APIs like this:</p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">
+                                      #If WPF Then
+                                      Â  ' nothing needed
+                                      #ElseIf PHONE Then
+                                      Â  ShowBatteryStatus()
+                                      #End If
+                                    </code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>
+                                  <strong>7. 50 Percent Faster Compile Times</strong> â€œ50 percent is no joke.â€â€”.NET MVP Sam Harwell
+                                </p>
+                                <p>The Visual Basic compiler used to be written in C++. For Visual Basic 14, the team has rewritten it completely in VB, which has made it considerably faster! Here are two comparisons:</p>
+                                <ul>
+                                  <li>A large solution build (1.3 million lines of code) went from 68 seconds to 41 seconds.</li>
+                                  <li>A cold solution load (a Windows Store app) went from 6.7 seconds to 4.6 seconds</li>
+                                </ul>
+                                <p>Thatâ€™s a considerable time saving. Itâ€™s great when your mind can stay on track rather than meandering in the delay between â€œfinish codingâ€ and â€œpress F5 to hit a breakpoint.â€</p>
+                                <p>The 50 percent performance increase might come as a surprise to people who think that C++ is faster than VB. The truth is that algorithms, data structures and concurrency are where you get real speed benefits. The performance boost from rewriting in VB comes from many places: rethinking the data structures; being able to express algorithms more cleanly and refactor more safely; using async and the threadpool; using the Visual Studio profiling tools to discover CPU and memory-allocation hotspots; and using analyzers to detect simple .NET performance gotchas like unnecessary boxing.</p>
+                                <p>
+                                  <strong>8. Lambdas and LINQ Expressions in a Watch Window</strong> â€œAwesome!â€â€”Visual Studio Uservoice User Marco Senn-Haag
+                                </p>
+                                <p>LINQ and lambdas are a great way to summarize data. One of the places this is needed most is at debug time, in the Watch and Immediate windows. In the past, any use of LINQ or lambdas here generated an error:</p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">Evaluation of lambda expressions is not valid in the debugger.</code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>
+                                  Now, as you can see in <strong>Figure 3</strong>, it just works! For instance, if youâ€™re at a breakpoint where you have a collection called â€œcustomers,â€ you can get a quick read on the collection by writing this in the watch window:
+                                </p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">From c In customers Where c.OrderStatus = "Unfulfilled" Select c.LastName</code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>
+                                  <img alt="Lambdas and LINQ Expressions in the Watch Window" src="http://i.msdn.microsoft.com/dn890368.Wischik_figure5_hires(en-us,MSDN.10).png" title="Lambdas and LINQ Expressions in the Watch Window" />
+                                  <br />
+                                  <strong>Figure 3 Lambdas and LINQ Expressions in the Watch Window</strong>
+                                </p>
+                                <p>Did you know you can use the Immediate Window without even launching your program? For instance, if youâ€™ve just written a module with a function GetName, you can open the Immediate window (Debug | Windows | Immediate) and type â€œ? GetName()â€ and it will evaluate.</p>
+                                <p>Visual Studio 2015 will also have better support for Edit and Continue such as in Async and Iterator methods, as well as in more common situations like inside of and around LINQ queries and lambdas, even allowing you to add a new query or lambda expression to an existing method. Although this didnâ€™t make it into the Visual Studio 2015 Preview, youâ€™ll be able to do all of this in the final release.</p>
+                                <p>
+                                  <strong>9. Better Error List</strong> â€œThe before and after really tell a great story.â€â€”Visual Basic Team Member Anthony D. Green
+                                </p>
+                                <p>
+                                  The Error List in Visual Basic 14 has numerous practical improvements, ones that answer long-standing user requests (see <strong>Figure 4</strong>). Before, the Error List used to show fully qualified type names; now it shows only minimally qualified type names so you can more easily read the error message. And it shows the error code, as well, which is handy for sorting by error code. Even better, the error code is a hyperlink to an Internet search, often more useful than a link to the MSDN documentation page. Also, you can filter each column in the error list like you do in Excel.
+                                </p>
+                                <p>
+                                  <img alt="The Error List in Visual Studio 2015 (bottom) is more Readable and Versatile Than in Visual Studio 2013 (top)" src="http://i.msdn.microsoft.com/dn890368.Wischik_figure6_hires(en-us,MSDN.10).png" title="The Error List in Visual Studio 2015 (bottom) is more Readable and Versatile Than in Visual Studio 2013 (top)" />
+                                  <br />
+                                  <strong>Figure 4 The Error List in Visual Studio 2015 (bottom) is more Readable and Versatile Than in Visual Studio 2013 (top)</strong>
+                                </p>
+                                <p>Sometimes when making big changes itâ€™s easy to get your solution into a state where a lot of downstream code is broken. In the past, VB would show only the first 101 errors. This made it difficult to get an idea of just how widespread the break was, or to get an overview of what kinds of changes youâ€™d have to make. Now, Visual Basic 14 shows all errors without limit. (This can be configured under Tools | Options | Text Editor | Basic | Advanced | Show diagnostics for closed files.)</p>
+                                <h2>Language Improvements</h2>
+                                <p>
+                                  <strong>10. Null-Propagating Operators</strong> â€œThe constant need for null checking bites everyone both in productivity and in bugs.â€â€”.NET MVP Deborah Kurata
+                                </p>
+                                <p>Suppose you have a Customer class with an Address field that might legitimately be null, perhaps because your app doesnâ€™t require addresses to be typed in. Previously, any code that needed to do something with the addressâ€”like display it to the userâ€”would need to be safeguarded with null checking to take this into account. Such null checks quickly get tedious. With Visual Basic 14 you can elegantly handle the possibility of a null like this, using the new ?. operator:</p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">
+                                      Console.WriteLine("{0} ({1})",
+                                      Â  customer.Name,
+                                      Â  customer.Address?.Country)
+                                    </code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>The ?. operator is simply shorthand for the common but cumbersome pattern of assigning to a temporary variable and then checking for null:</p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">
+                                      Dim _temp = customer.Address
+                                      Console.WriteLine("{0} ({1})",
+                                      Â  customer.Name,
+                                      Â  If(_temp Is Nothing, Nothing, _temp.Country))
+                                    </code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>You can use ?. in a sequence and mix it with the regular dot operator, a?.b.c?.d, for example. It reads left-to-right. Any null value used by ?. will just stop the sequence short and give the answer Nothing, and any null value used by . will throw a NullReferenceException as usual.</p>
+                                <p>The ?. operator is a null-conditional version of the . operator. There are null-conditional versions of most other operators, as well: indexing, array?(i); delegate invocation, delegate?(args); dictionary lookup, dict?!key; and XML axis properties, xml?.@attr, xml?.&lt;key&gt;, xml?...&lt;key&gt;.</p>
+                                <p>You can use ?. in other handy ways, too:</p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">
+                                      If customer?.Age &gt; 50 Then ...
+                                      ' If branch taken only if customer is non-null AND is older than 50
+                                      Dim name = If(customer?.Name, "blank")
+                                      ' Pick a default name if customer is null
+                                      Dim first = customers?.FirstOrDefault()
+                                      ' Only invoke this method if customers is non-null
+                                    </code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>
+                                  <strong>11. Multiline String Literals</strong> â€œIs it sad that Iâ€™m so excited for multiline string literals?â€â€”Forum User Scaramouche
+                                </p>
+                                <p>This is how you used to write multiline strings, peppered with vbCrLfs:</p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">
+                                      Dim json = "{" &amp; vbCrLf &amp;
+                                      "Â  'Name': 'Bad Boys'," &amp; vbCrLf &amp;
+                                      "Â  'ReleaseDate': '1995-4-7T00:00:00'," &amp; vbCrLf &amp;
+                                      "Â  'Genres': ['Action','Comedy']" &amp; vbCrLf &amp;
+                                      "}"
+                                    </code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>Understandably, a common request has been to allow string literals that span multiple lines. Now, in Visual Basic 14, you can:</p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">
+                                      Dim json = "{
+                                      Â  'Name': 'Bad Boys',
+                                      Â  'ReleaseDate': '1995-4-7T00:00:00',
+                                      Â  'Genres': ['Action','Comedy']
+                                      }"
+                                    </code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>A related noteworthy featureâ€”also commonly requestedâ€”is that you can now put comments within multiline statements. Previously, they werenâ€™t allowed inside LINQ expressions like the following:</p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">
+                                      Dim q = From x In y ' This is a from clause
+                                      Â Â Â Â Â Â Â  Where x &lt; z ' And this is the where
+                                      Â Â Â Â Â Â Â  Select xÂ Â Â  ' This select is redundant
+                                    </code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>
+                                  <strong>12. String Interpolation</strong> â€œString interpolation makes for much simpler code, and makes the intent pop out.â€â€”Channel9 User Judah
+                                </p>
+                                <p>String interpolation is an easier way of writing strings with expressions in them, like so:</p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">Dim s = $"hello {p.Name} you are {p.Height:0.00}m tall"</code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>This is simply shorthand for the following:</p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">Dim s = String.Format("hello {0} you are {1:0.00}m tall", p.Name, p.Height)</code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>String interpolation is often easier to write than an explicit call to String.Format because it saves you having to juggle the positional placeholders {0} and {1}. And, of course, thereâ€™s full colorization and IntelliSense for the expressions inside the holes. String interpolation works particularly well with programmatic strings, as in these examples:</p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">
+                                      Dim fn = $"C:\Documents\{folder}\{file}.{ext}"
+                                      Dim url = $"http://{site}/{path}/{file}?search={query}"
+                                    </code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>As is normal for String.Format, this formats the string using the current culture. If youâ€™re constructing a programmatic string that includes a floating point number, such as when youâ€™re passing latitude and longitude to a Web service, youâ€™ll most likely want InvariantCulture instead. This will be supported in Visual Studio 2015, but at press time the design wasnâ€™t yet settled.</p>
+                                <p>Note that string interpolation isnâ€™t yet in Visual Studio 2015 Preview, but will be present in Visual Studio 2015 before itâ€™s final.</p>
+                                <p>
+                                  <strong>13. NameOf</strong> â€œThis will be such a help for so many scenarios I can think of.â€â€”Roslyn Forum Member ewwloyd
+                                </p>
+                                <p>The NameOf operator is a better way of embedding a string literal in your code, when that string literal refers to a name in your source code. Hereâ€™s one example:</p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">
+                                      Sub f(s As String)
+                                      Â  If s Is Nothing Then Throw New ArgumentNullException(NameOf(s))
+                                      End Sub
+                                    </code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>The NameOf operator isnâ€™t evaluated at run time: Itâ€™s a compile-time constant, in this case the constant string â€œs.â€ The reason to use NameOf(s) is that it safeguards you against typos. For instance, if you rename the method parameter, then the NameOf argument will be renamed automatically. That wouldnâ€™t have happened with just a string literal. Hereâ€™s another place where NameOf works well:</p>
+                                <div class="CodeHighlighter">
+                                  <pre>
+                                    <code class="xml">
+                                      Private _age As Integer
+                                      Property Age As Integer
+                                      Â  Get
+                                      Â Â Â  Return _age
+                                      Â  End Get
+                                      Â  Set
+                                      Â Â Â  _age = Value
+                                      Â Â Â  RaiseEvent PropertyChanged(
+                                      Â Â Â Â Â  Me, New PropertyChangedEventArgs(NameOf(Age)))
+                                      Â  End Set
+                                      End Property
+                                    </code>
+                                  </pre>
+                                </div>
+                                <script type="text/javascript">ChiliBook.lineNumbers = true;ChiliBook.automatic = true;</script>
+                                <p>Note that NameOf isnâ€™t yet in Visual Studio 2015 Preview, but will be present in Visual Studio 2015 before itâ€™s final.</p>
+                                <p>
+                                  <strong>14. Open Source</strong> â€œWeâ€™re trying to engage the community. There are a lot of smart people out there. Weâ€™ll look at pull requests from the community just like we do our own ideas.â€â€”C#/Visual Basic Architect Anders Hejlsberg
+                                </p>
+                                <p>The final improvement is not in Visual Basic itself, but in the process of working with VB.</p>
+                                <p>The source code of the VB compiler is now open source. So is the design process of the language itself. Each new feature proposal is made in the open, with full public scrutiny. The members of the Microsoft Visual Basic Language Design Team are essentially now stewards of the language. The team looks at proposals, considers them deeply, sees if there are unexpected gotchas or corner-cases, and determines if they meet the bar for inclusion in the language. The Language Design Meeting minutes are published openly. Itâ€™s truly an exciting time to be on the Visual Basic Language Design Team, and an exciting time to be a user of VB.</p>
+                                <h2>Wrapping Up</h2>
+                                <p>
+                                  There are a lot of improvements in Visual Basic 14. This article has covered almost half of them. The general theme has been to make the existing VB work better in easy-to-use ways, without introducing difficult new concepts. For more information, check out <a id="ctl00_MTContentSelector1_mainContentContainer_ctl18" href="http://roslyn.codeplex.com/" onclick="javascript:Track('ctl00_MTContentSelector1_mainContentContainer_ctl00|ctl00_MTContentSelector1_mainContentContainer_ctl18',this);">roslyn.codeplex.com</a> and <a id="ctl00_MTContentSelector1_mainContentContainer_ctl19" href="http://blogs.msdn.com/vbteam" onclick="javascript:Track('ctl00_MTContentSelector1_mainContentContainer_ctl00|ctl00_MTContentSelector1_mainContentContainer_ctl19',this);">blogs.msdn.com/vbteam</a>.
+                                </p>
+                                <p>This article refers to prerelease versions of Visual Basic 14 and Visual Studio 2015. All information is subject to change.</p>
+                                <hr />
+                                <div>
+                                  <div>
+                                    <div>
+                                      <p>
+                                        <strong>Lucian Wischik</strong>Â <em>
+                                          is on the Visual Basic/C# Language Design Team at Microsoft, with particular responsibility for VB. Before joining Microsoft he worked in academia on concurrency theory and async. Heâ€™s a keen sailor and long-distance swimmer. Reach him at <a id="ctl00_MTContentSelector1_mainContentContainer_ctl20" href="mailto:lwischik@microsoft.com" onclick="javascript:Track('ctl00_MTContentSelector1_mainContentContainer_ctl00|ctl00_MTContentSelector1_mainContentContainer_ctl20',this);">lwischik@microsoft.com</a>.
+                                        </em>
+                                      </p>
+                                    </div>
+                                    <p>
+                                      Thanks to the following Microsoft technical experts for reviewing this article: Dustin Campbell and Anthony D. Green<br />Dustin Campbell is a principal program manager on the Visual Studio team, where he works on the Visual Basic and C# IDE experiences. For the last five years, he has been focused on rebuilding the VB and C# compilers and IDEs as part of Project Roslyn.
+                                    </p>
+                                    <p>Anthony D. Green is a program manager on the VB/C#/F# team at Microsoft who has been rewriting the VB &amp; C# compilers (in VB and C#). Anthony has been programming in BASIC programming languages since age 14, mostly in QBasic and VB, and has been an impassioned member of the VB.NET community since 2004.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="FeatureSmallHeadWithLogo">&nbsp;</div>
+                        </td>
+                        <td style="width: 303px; vertical-align: top; padding-left: 3px;" valign="top">
+                          <div id="RightContent">
+                            <div id="ctl00_RightSideBox">
+                              <p:primary pcat:primaryFormat="Mtps.Xhtml"   xmlns:asp="http://msdn2.microsoft.com/aspnet" xmlns:pcat="urn:mtpg-com:mtps/2004/1/primary/category" xmlns:p="urn:mtpg-com:mtps/2004/1/primary">
+                                <div class="navpage">
+                                  <div style="margin-bottom:10px;">
+                                    <iframe frameBorder="0" frameSpacing="0" height="250" id="4f2320cbb2378" name="4f2320cbb2378" scrolling="no" src="http://ox-d.101m3.com/w/1.0/afr?auid=139281&amp;cb=INSERT_RANDOM_NUMBER_HERE" width="300">
+                                      <a id="ctl00_ctl12" href="http://ox-d.101m3.com/w/1.0/rc?cs=4f2320cbb2378&cb=INSERT_RANDOM_NUMBER_HERE" onclick="javascript:Track('ctl00_ctl11|ctl00_ctl12',this);">
+                                        <img alt="" border="0" src="http://ox-d.101m3.com/w/1.0/ai?auid=139281&amp;cs=4f2320cbb2378&amp;cb=INSERT_RANDOM_NUMBER_HERE" />
+                                      </a>
+                                    </iframe>
+                                  </div>
+                                  <div style="margin-bottom:10px;">
+                                    <iframe frameBorder="0" frameSpacing="0" height="250" id="4f2320971b57d" name="4f2320971b57d" scrolling="no" src="http://ox-d.101m3.com/w/1.0/afr?auid=139280&amp;cb=INSERT_RANDOM_NUMBER_HERE" width="300">
+                                      <a id="ctl00_ctl13" href="http://ox-d.101m3.com/w/1.0/rc?cs=4f2320971b57d&cb=INSERT_RANDOM_NUMBER_HERE" onclick="javascript:Track('ctl00_ctl11|ctl00_ctl13',this);">
+                                        <img alt="" border="0" src="http://ox-d.101m3.com/w/1.0/ai?auid=139280&amp;cs=4f2320971b57d&amp;cb=INSERT_RANDOM_NUMBER_HERE" />
+                                      </a>
+                                    </iframe>
+                                  </div>
+                                  <div style="border-width:5px;border-color:black;border-style:solid;">
+                                    <div style="margin-left:5px; margin-right:5px;">
+                                      <h3>
+                                        <a id="ctl00_ctl14" href="http://blogs.msdn.com/msdnmagazine/" onclick="javascript:Track('ctl00_ctl11|ctl00_ctl14',this);">MSDN Magazine Blog</a>
+                                      </h3>
+                                      <p>
+                                        <!-- RSSURL : http://blogs.msdn.com/msdnmagazine/rss.xml | RSS GUID : 44CFFA5F-CCC2-14A2-2403-529DE793E787 -->
+                                        <div id="ctl00_ctl15_MtpsFeedViewerBasicPanelWebSlice" class="hslice">
+
+                                          <p id="ctl00_ctl15_titlediv" class="entry-title"></p>
+                                          <div class="entry-content">
+
+                                            <div id="ctl00_ctl15_MtpsFeedViewerBasicPanel" Class="MtpsFeedViewerBasicRootPanelClass">
+
+                                              <div id="ctl00_ctl15_MtpsFeedViewerBasicHeaderPanel" Class="MtpsFeedViewerBasicHeaderStylePanel">
+
+
+                                              </div>
+                                              <div class="ColumnDiv">
+                                                <div id="ctl00_ctl15_ctl02" class="BasicHeadlinesItemPanelCssClass" style="width:99%;">
+                                                  <a id="ctl00_ctl15_ctl03" title="Big Start to the New Year at MSDN Magazine" class="BasicHeadlinesTitleBold" href="http://blogs.msdn.com/b/msdnmagazine/archive/2015/01/02/10583956.aspx" onclick="javascript:Track('ctl00_ctl15_ctl02|ctl00_ctl15_ctl03',this);">Big Start to the New Year at MSDN Magazine</a>
+                                                  <br/>
+                                                  <span class="BasicHeadlinesDescLabelCssClass">Â   Folks, things are hopping over here at MSDN Magazine. We are kicking off the new year with a pair of issues: Our regularly scheduled January issue... </span>
+                                                  <a id="ctl00_ctl15_ctl06" title="Big Start to the New Year at MSDN Magazine" href="http://blogs.msdn.com/b/msdnmagazine/archive/2015/01/02/10583956.aspx" onclick="javascript:Track('ctl00_ctl15_ctl02|ctl00_ctl15_ctl06',this);">More...</a>
+                                                  <br/>
+                                                  <span class="FVBPubDateLabel">Friday, Jan 2</span>
+                                                </div>
+                                              </div>
+                                              <div class="ColumnDiv">
+                                                <div id="ctl00_ctl15_ctl10" class="BasicHeadlinesItemPanelCssClass" style="width:99%;">
+                                                  <a id="ctl00_ctl15_ctl11" title="Charles Petzold Departing" class="BasicHeadlinesTitleBold" href="http://blogs.msdn.com/b/msdnmagazine/archive/2014/10/01/10561803.aspx" onclick="javascript:Track('ctl00_ctl15_ctl10|ctl00_ctl15_ctl11',this);">Charles Petzold Departing</a>
+                                                  <br/>
+                                                  <span class="BasicHeadlinesDescLabelCssClass">Â   As I describe in this monthâ€™s Editorâ€™s Note column, the October issue of MSDN Magazine is Charles Petzoldâ€™s last as a regular columnist. He is leav... </span>
+                                                  <a id="ctl00_ctl15_ctl14" title="Charles Petzold Departing" href="http://blogs.msdn.com/b/msdnmagazine/archive/2014/10/01/10561803.aspx" onclick="javascript:Track('ctl00_ctl15_ctl10|ctl00_ctl15_ctl14',this);">More...</a>
+                                                  <br/>
+                                                  <span class="FVBPubDateLabel">Wednesday, Oct 1</span>
+                                                </div>
+                                              </div>
+                                              <div class="EmptyPanel">
+
+                                              </div>
+                                            </div>
+
+                                          </div>
+
+                                        </div>
+                                      </p>
+                                      <p>
+                                        <a id="ctl00_ctl16" href="http://blogs.msdn.com/msdnmagazine/" onclick="javascript:Track('ctl00_ctl11|ctl00_ctl16',this);">More MSDN Magazine Blog entries &gt;</a>
+                                      </p>
+                                    </div>
+                                    <div style="margin-left:5px; margin-right:5px; background-color:#5b6871;height:12px">
+                                      <!--PublishThis!: An empty tag was encountered. This comment was inserted to prevent a self-closing tag.-->
+                                    </div>
+                                    <div style="margin-left:5px; margin-right:5px;">
+                                      <p>
+                                        <br />
+                                      </p>
+                                      <div style="text-align:left;font-family:Segoe UI;font-size:12pt;">Current Issue</div>
+                                      <div style="text-align:center;display:block;height:260px">
+                                        <p>
+                                          <br />
+                                          <a id="ctl00_ctl17" href="dn857348.aspx" onclick="javascript:Track('ctl00_ctl11|ctl00_ctl17',this);">
+                                            <img align="Middle" alt="December 2014" height="239" src="http://i.msdn.microsoft.com/dn857348.cover_lrg(en-us,MSDN.10).jpg" title="December 2014" width="179" />
+                                          </a>
+                                        </p>
+                                      </div>
+                                      <div style="text-align:right;">
+                                        <p>
+                                          <a id="ctl00_ctl18" href="ee310108.aspx" onclick="javascript:Track('ctl00_ctl11|ctl00_ctl18',this);">Browse All MSDN Magazines</a>
+                                          <br />
+                                        </p>
+                                      </div>
+                                      <div style="background-color:#5b6871;height:12px">
+                                        <!--PublishThis!: An empty tag was encountered. This comment was inserted to prevent a self-closing tag.-->
+                                      </div>
+                                    </div>
+                                    <div style="margin-left:5px; margin-right:5px;">
+                                      <div style="text-align:Right;font-family:Segoe UI;font-size:12pt;">
+                                        <p>
+                                          <br />
+                                          <a id="ctl00_ctl19" href="http://msdn.microsoft.com/en-US/aa570311.aspx?ocid=msdn_magazine" onclick="javascript:Track('ctl00_ctl11|ctl00_ctl19',this);">
+                                            <img align="Left" alt="Subscribe to the MSDN Flash newsletter" src="http://i2.msdn.microsoft.com/dd799403.Question_opt(en-us,MSDN.10).png" title="Subscribe to the MSDN Flash newsletter" /> Subscribe to MSDN Flash newsletter
+                                          </a>
+                                        </p>
+                                      </div>
+                                      <div style="text-align:left;">
+                                        <p>
+                                          <br />Receive the MSDN Flash e-mail newsletter every other week, with news and information personalized to your interests and areas of focus.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p:primary>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <div id="ctl00_FooterAd" class="MsdnPage_ContentInclude" align="center">
+                      <div>
+                        <div>
+                          <div class="navpage" >
+                            <p>Â </p>
+                            <div>
+                              <iframe frameBorder="0" frameSpacing="0" height="90" id="4f2320f8e860a" name="4f2320f8e860a" scrolling="no" src="http://ox-d.101m3.com/w/1.0/afr?auid=139282&amp;cb=INSERT_RANDOM_NUMBER_HERE" width="728">
+                                <a id="ctl00_ctl28" href="http://ox-d.101m3.com/w/1.0/rc?cs=4f2320f8e860a&cb=INSERT_RANDOM_NUMBER_HERE" onclick="javascript:Track('ctl00_ctl27|ctl00_ctl28',this);">
+                                  <img alt="" border="0" src="http://ox-d.101m3.com/w/1.0/ai?auid=139282&amp;cs=4f2320f8e860a&amp;cb=INSERT_RANDOM_NUMBER_HERE" />
+                                </a>
+                              </iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Clearbottom"> </div>
+              <div class="bottomleftcorner"> </div>
+              <div class="bottomrightcorner"> </div>
+              <div id="Footer">
+
+
+                <div class="FooterLinks">
+                  <div id="ctl00_Footer1_SiteLinks">
+
+                  </div>
+                  <span id="ctl00_Footer1_Copyright" title="Â© 2015  Microsoft. All rights reserved." class="FooterCopyright">&copy; 2015  Microsoft. All rights reserved.</span>
+                  <a id="ctl00_Footer1_Terms" title="Terms of Use" href="/cc300389.aspx">Terms of Use</a>
+                  <span class="Pipe">|</span>
+                  <a id="ctl00_Footer1_Trademarks" title="Trademarks" href="http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.mspx">Trademarks</a>
+                  <span class="Pipe">|</span>
+                  <a id="ctl00_Footer1_PrivacyStatement" title="Privacy Statement" href="http://www.microsoft.com/info/privacy.mspx">Privacy Statement</a>
+                  <span id="ctl00_Footer1_PipeSpan3" class="Pipe">|</span>
+                  <a id="ctl00_Footer1_Feedback" title="Site Feedback" rel="sitefeedback" targetUrl="https://lab.msdn.microsoft.com/mailform/contactus.aspx?refurl=http://msdn.microsoft.com/en-us/magazine/dn890368.aspx&amp;loc=en-us" href="https://lab.msdn.microsoft.com/mailform/contactus.aspx?refurl=http://msdn.microsoft.com/en-us/magazine/dn890368.aspx&amp;loc=en-us" target="_blank">Site Feedback</a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display:none">
+        <img src="http://c.microsoft.com/trans_pixel.asp?source=msdn&amp;TYPE=PV&amp;uri=%2fen-us%2fmagazine(d%3ddefault)%2fdn890368(l%3den-us%2cv%3dMSDN.10).aspx&amp;p=_en-us_magazine(d=default)_dn890368(l=en-us,v=MSDN.10).aspx" width="0" height="0" hspace="0" vspace="0" border="0" alt="Page view tracker" />
+      </div>
+
+      <script src="http://i2.msdn.microsoft.com/platform/Controls/WebTrends/resources/webtrendsscript-bn1651.js" type="text/javascript"></script>
+      <noscript>
+        <div>
+          <img alt="DCSIMG" id="Img1" width="1" height="1" src="http://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" />
+        </div>
+      </noscript>
+      <script type="text/javascript" src="http://i2.msdn.microsoft.com/en-us/magazine/mtps-bn1651.js?l=en-us&amp;i=magazine&amp;ct=AlternateSelector;CCEditor;CCSection;CCTagEditor;ContentFallback;EyebrowSimple;FeedViewerBasic;InstrumentedLink;InteractiveToolbar;MtpsRating;MtViewDropDown;Omniture;RedVelvetInstrumentedLink;StoCodeHighlighter;StoFooter;StoLocaleManagementFlyout;StoMastheadMSDN;StoMtpsLoginStatus;StoProfileLink;StoSearch;StoTabStrip;SurveyLauncher;TemplatedFlyout;TransWikiPopupEditor;WebMetrix;WebTrends"></script>
+
+
+      <script type="text/javascript">
+        //<![CDATA[
+ RegisterAutoSubmit('ctl00_tb1_Flyout_Rating1','ctl00_tb1_Flyout_btnSend','contentRatingdn890368MSDN.10en-us');
+
+//]]>
+      </script>
+    </form>
+  </body>
+
+  <script language="javascript" type="text/javascript" src="http://js.microsoft.com/library/svy/sto/broker.js"></script>
+</html>
