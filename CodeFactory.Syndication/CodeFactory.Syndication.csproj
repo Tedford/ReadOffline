@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http" />
@@ -41,9 +44,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Article.cs" />
     <Compile Include="DateNormalizingXmlTextReader.cs" />
+    <Compile Include="IArticleClassifier.cs" />
+    <Compile Include="Microsoft\MicrosoftArticleClassifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rss20Crawler.cs" />
+    <Compile Include="ArticleCrawler.cs" />
+    <Compile Include="SiteAsset.cs" />
+    <Compile Include="WebSite.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
