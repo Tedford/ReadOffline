@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace CodeFactory.Syndication
     /// <summary>
     /// An in-memory representation of a website
     /// </summary>
+    [DebuggerDisplay("{Url}")]
     public class WebSite
     {
         private List<SiteAsset> _assets = new List<SiteAsset>();
@@ -33,7 +35,22 @@ namespace CodeFactory.Syndication
         /// Gets the URL to where the site was downloaded.
         /// </summary>
         /// <value>The URL.</value>
-        public Uri Url { get; set; }
+        public Uri Url { get; private set; }
+
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="WebSite" /> class.
+        /// </summary>
+        /// <param name="uri">The URI to the represented website.</param>
+        /// <exception cref="System.ArgumentNullException">uri</exception>
+        public WebSite(Uri uri)
+        {
+            if (uri == null)
+            {
+                throw new ArgumentNullException("uri");
+            }
+            Url = uri;
+        }
 
         /// <summary>
         /// Adds the specified asset to the site.

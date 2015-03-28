@@ -1,0 +1,40 @@
+﻿<package xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata>
+    <dc:title>MSDN Magazine 3 2015</dc:title>
+    <dc:date>3/25/2015</dc:date>
+    <dc:language>en-us</dc:language>
+  </metadata>
+  <manifest>
+    <item id="item1" media-type="application/xhtml+xml" href="toc.html" />
+    <item id="item2" media-type="application/xhtml+xml" href="C:\Users\ted_000\Desktop\msdn\MSDN Magazine 3 2015\Go Cross-Platform with the _NET Framework.html" />
+    <item id="item3" media-type="application/xhtml+xml" href="C:\Users\ted_000\Desktop\msdn\MSDN Magazine 3 2015\The Microsoft _NET Framework in Embedded Applications.html" />
+    <item id="item4" media-type="application/xhtml+xml" href="C:\Users\ted_000\Desktop\msdn\MSDN Magazine 3 2015\Create an IoT Device Using the Gadgeteer with Azure Blob Storage.html" />
+    <item id="item5" media-type="application/xhtml+xml" href="C:\Users\ted_000\Desktop\msdn\MSDN Magazine 3 2015\A Deep Dive into the ASP_NET 5 Runtime.html" />
+    <item id="item6" media-type="application/xhtml+xml" href="C:\Users\ted_000\Desktop\msdn\MSDN Magazine 3 2015\Type Ahead.html" />
+    <item id="item7" media-type="application/xhtml+xml" href="C:\Users\ted_000\Desktop\msdn\MSDN Magazine 3 2015\Hitting a New Wall.html" />
+    <item id="item8" media-type="application/xhtml+xml" href="C:\Users\ted_000\Desktop\msdn\MSDN Magazine 3 2015\Not Your Father’s _NET Framework.html" />
+    <item id="item9" media-type="application/xhtml+xml" href="C:\Users\ted_000\Desktop\msdn\MSDN Magazine 3 2015\A Web Game in an Hour.html" />
+    <item id="item10" media-type="application/xhtml+xml" href="C:\Users\ted_000\Desktop\msdn\MSDN Magazine 3 2015\Enhance Data Exploration with Azure Search.html" />
+    <item id="item11" media-type="application/xhtml+xml" href="C:\Users\ted_000\Desktop\msdn\MSDN Magazine 3 2015\Design and Develop Accessible Modern Apps.html" />
+    <item id="item12" media-type="application/xhtml+xml" href="C:\Users\ted_000\Desktop\msdn\MSDN Magazine 3 2015\Gradient Descent Training Using C#.html" />
+    <item id="item13" media-type="application/xhtml+xml" href="C:\Users\ted_000\Desktop\msdn\MSDN Magazine 3 2015\Using Printf with Modern C.html" />
+  </manifest>
+  <spine>
+    <itemref idref="item1" />
+    <itemref idref="item2" />
+    <itemref idref="item3" />
+    <itemref idref="item4" />
+    <itemref idref="item5" />
+    <itemref idref="item6" />
+    <itemref idref="item7" />
+    <itemref idref="item8" />
+    <itemref idref="item9" />
+    <itemref idref="item10" />
+    <itemref idref="item11" />
+    <itemref idref="item12" />
+    <itemref idref="item13" />
+  </spine>
+  <guide>
+    <reference type="toc" title="able of Contents" href="toc.html" />
+  </guide>
+</package>

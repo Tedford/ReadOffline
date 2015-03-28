@@ -1,0 +1,20 @@
+﻿@* Generator : Template TypeVisibiity : Public GeneratePrettyNames: true Namespace: CodeFactory.Epub  *@
+@functions {public CodeFactory.Epub.Models.TableOfContents Model {get;set;} }
+
+<html>
+<head>
+    <title>@Model.Title</title>
+</head>
+<body>
+    <div>
+        <h1>
+            <b>TABLE OF CONTENTS</b>
+        </h1>
+        @foreach (CodeFactory.Epub.Models.ContentItem item in Model.Contents)
+        {
+            <b>@item.Category</b>
+            <ul><li><a href="@item.Reference">@item.Title</a></li></ul> 
+        }
+    </div>
+</body>
+</html>

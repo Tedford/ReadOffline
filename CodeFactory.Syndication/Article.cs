@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace CodeFactory.Syndication
 {
     /// <summary>
-    /// Represents a single web page which consists of textual and image content
+    /// Represents a website which is typically a single web page consisting of textual and image content
     /// </summary>
-    public class Article
+    [DebuggerDisplay("{Url} - {Title}")]
+    public class Article : WebSite
     {
-        private List<SiteAsset> _assets = new List<SiteAsset>();
+        private readonly List<SiteAsset> _assets = new List<SiteAsset>();
 
         /// <summary>
         /// Gets or sets the authors of the article.
@@ -17,24 +19,10 @@ namespace CodeFactory.Syndication
         public IEnumerable<string> Authors { get; set; }
 
         /// <summary>
-        /// Gets the assets used within the article.
-        /// </summary>
-        /// <value>The assets.</value>
-        public IEnumerable<SiteAsset> Assets
-        {
-            get { return _assets; }
-        }
-
-        /// <summary>
         /// Gets or sets the categories.
         /// </summary>
         /// <value>The categories.</value>
         public IEnumerable<string> Categories { get; set; }
-
-        /// <summary>
-        /// Gets the markup representing the article
-        /// </summary>
-        public string Html { get; set; }
 
         /// <summary>
         /// Gets or sets the date the article was published.
@@ -54,12 +42,6 @@ namespace CodeFactory.Syndication
         /// <value>The name.</value>
         public string Title { get; set; }
 
-        /// <summary>
-        /// Gets or sets the URL where the article is hosted.
-        /// </summary>
-        /// <value>The URL.</value>
-        public Uri Url { get; private set; }
-
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Article"/> class.
@@ -67,22 +49,9 @@ namespace CodeFactory.Syndication
         /// <param name="uri">The URI.</param>
         /// <exception cref="System.ArgumentNullException">uri</exception>
         public Article(Uri uri)
+            : base(uri)
         {
-            if (uri == null)
-            {
-                throw new ArgumentNullException("uri");
-            }
-
-            Url = uri;
         }
 
-        /// <summary>
-        /// Adds the specified asset to the article representation.
-        /// </summary>
-        /// <param name="asset">The asset.</param>
-        public void Add(SiteAsset asset)
-        {
-            _assets.Add(asset);
-        }
     }
 }

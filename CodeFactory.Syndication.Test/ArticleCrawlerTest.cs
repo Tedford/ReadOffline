@@ -11,18 +11,19 @@ namespace CodeFactory.Syndication.Test
     [TestClass]
     public class ArticleCrawlerTest
     {
-        [TestMethod]
+        [TestMethod, Description("Validate that an ")]
         public void Instantiate()
         {
-            ArticleCrawler crawler = new ArticleCrawler();
+            WebSiteCrawler crawler = new WebSiteCrawler();
         }
 
         [TestMethod]
         public void Crawl()
         {
             Article article = CreateArticle();
-            ArticleCrawler crawler = new ArticleCrawler();
+            WebSiteCrawler crawler = new WebSiteCrawler();
             crawler.Crawl(article);
+            Assert.AreEqual(14, article.Assets.Count());
         }
 
         private static Article CreateArticle()

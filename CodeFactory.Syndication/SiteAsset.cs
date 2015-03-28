@@ -1,16 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace CodeFactory.Syndication
 {
     /// <summary>
     /// Describes an asset, like an image, on a website
     /// </summary>
+    [DebuggerDisplay("{RelativePath}")]
     public class SiteAsset
     {
+        /// <summary>
+        /// Gets or sets media-type of the described asset.
+        /// </summary>
+        /// <value>The type of the media.</value>
+        public string MediaType { get; set; }
+
         /// <summary>
         /// Gets or sets the name of the asset.
         /// </summary>
