@@ -113,6 +113,11 @@ namespace CodeFactory.Syndication
             return asset;
         }
 
+        /// <summary>
+        /// Gets the base url for the size to resolve relative URLs.
+        /// </summary>
+        /// <param name="uri">The URI.</param>
+        /// <returns>The <see cref="Uri"/> to the base site.</returns>
         private Uri GetSiteBase(Uri uri)
         {
             var pieces = uri.GetComponents(UriComponents.Host | UriComponents.Path, UriFormat.Unescaped).Split('/');

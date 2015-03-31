@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeFactory.Epub
+namespace CodeFactory.Ebook
 {
     public static class Namespaces
     {
