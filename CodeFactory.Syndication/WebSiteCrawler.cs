@@ -33,19 +33,25 @@ namespace CodeFactory.Syndication
         /// <returns>WebSite.</returns>
         /// <exception cref="System.ArgumentNullException">article</exception>
         /// <exception cref="System.ArgumentException">A URL to the base article is required;article</exception>
-        public void Crawl(WebSite webSite)
+        public async void Crawl(IWebSite webSite)
         {
             if (webSite == null)
             {
                 throw new ArgumentNullException("webSite");
             }
 
+            if (!webSite.Html.Any())
+            {
+                webSite.Download();
+            }
+
             HtmlDocument document = new HtmlDocument();
-            document.LoadHtml(webSite.Html);
+            document.LoadHtml(webSite.Html.Single());
 
             IEnumerable<HtmlNode> imageTags = document.DocumentNode
                                                       .Descendants("img")
-                                                      .Where(i => !string.IsNullOrWhiteSpace(i.GetAttributeValue("src", null)));
+                                                      .Where(i => !string.IsNullOrWhiteSpace(i.GetAttributeValue("src", null)))
+                                                      .ToArray();
 
             // TODO handle this asynchronously
             foreach (var image in imageTags)
@@ -62,6 +68,18 @@ namespace CodeFactory.Syndication
                 image.SetAttributeValue("src", asset.RelativePath.ToString());
                 webSite.Add(asset);
             }
+        }
+
+        private async SiteAsset GetAsset(IWebSite site, HtmlNode image)
+        {
+            Uri uri = new Uri(image.GetAttributeValue("src", null), UriKind.RelativeOrAbsolute);
+            if (!uri.IsAbsoluteUri)
+            {
+                Uri siteBase = GetSiteBase(site.Url);
+                uri = new Uri(siteBase, uri);
+            }
+
+
         }
 
         /// <summary>
