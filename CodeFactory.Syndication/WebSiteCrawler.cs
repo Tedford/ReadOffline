@@ -70,7 +70,13 @@ namespace CodeFactory.Syndication
             }
         }
 
-        private async SiteAsset GetAsset(IWebSite site, HtmlNode image)
+        /// <summary>
+        /// Gets the remote asset.
+        /// </summary>
+        /// <param name="site">The site.</param>
+        /// <param name="image">The HTML image node.</param>
+        /// <returns>The task returning the <see cref="SiteAsset"/>.</returns>
+        private async Task<SiteAsset> GetAsset(IWebSite site, HtmlNode image)
         {
             Uri uri = new Uri(image.GetAttributeValue("src", null), UriKind.RelativeOrAbsolute);
             if (!uri.IsAbsoluteUri)
@@ -79,7 +85,7 @@ namespace CodeFactory.Syndication
                 uri = new Uri(siteBase, uri);
             }
 
-
+            return null;
         }
 
         /// <summary>
